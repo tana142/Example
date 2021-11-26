@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         viewModel?.liveData?.observe(this) {
             binding?.tt?.text = it.name
         }
-
+// tan send: hello duc
         binding?.btnClick?.setOnClickListener {
             viewModel?.clickButton()
         }
