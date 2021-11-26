@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
         }
 // tan send: hello duc
         binding?.btnClick?.setOnClickListener {
-            viewModel?.clickButton()
+//            viewModel?.clickButton()
+            val s: String? = null
         }
     }
 }
