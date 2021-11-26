@@ -20,10 +20,9 @@ class MainActivity : AppCompatActivity() {
         viewModel?.liveData?.observe(this) {
             binding?.tt?.text = it.name
         }
-// tan send: hello duc
+//duc  say hello
         binding?.btnClick?.setOnClickListener {
-//            viewModel?.clickButton()
-            val s: String? = null
+            viewModel?.clickButton()
         }
     }
 }
