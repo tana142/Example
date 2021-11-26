@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 //duc  say hello
         binding?.btnClick?.setOnClickListener {
             viewModel?.clickButton()
+            var a:String
         }
     }
 }
