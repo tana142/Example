@@ -1,0 +1,26 @@
+Làm app chat realtime sử dụng server Firebase. Yêu cầu có các tính năng sau:
+1. Đăng nhập, đăng ký sử dụng email
+2. Danh sách user:
+	2.1 Xem tất cả user
+	2.2 Xem user là bạn
+	2.3 Xem danh sách yêu cầu kết bạn đã nhận
+	2.4 Xem danh sách yêu cầu kết bạn đã gửi
+3. Kết bạn:
+	3.1 Gửi yêu cầu kết bạn
+	3.2 Hủy yêu cầu kết bạn
+	3.3 Đồng ý yêu cầu kết bạn
+	3.4 Không đồng ý yêu cầu kết bạn
+4. Profile của mình:
+	4.1 Xem profile (user name, avatar)
+	4.2 Sửa profile: đổi user name, đổi avatar
+5. Tin nhắn:
+	5.1 Danh sách các cuộc hội thoại
+	5.2 Chi tiết cuộc hội thoại (danh sách tin nhắn trong cuộc hội thoại)
+	5.3 Gửi tin nhắn (chỉ nhắn tin được cho user đã là bạn)
+	5.4 Gửi ảnh
+	5.5 Gửi emoji
+6. Notification:
+	6.1 Khi có tin nhắn mới. Tap vào notification -> mở màn hình tin nhắn tương ứng
+	6.2 Khi có yêu cầu kết bạn. Tap vào hiển thị màn hình danh sách yêu cầu kết bạn
+7. Xem ở chế độ offline: Khi đã lấy được danh sách user, tin nhắn mà mất mạng thì vẫn xem được.
+8.Đa ngôn ngữ: Anh, Việt
