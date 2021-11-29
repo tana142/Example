@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+
+        <ImageView
+            android:id="@+id/register_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/ic_arrow_left_blue_icon"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="136dp"
+            android:fontFamily="@font/lato_black"
+            android:text="Đăng ký"
+            android:textColor="#4356B4"
+            android:textSize="26sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="236dp"
+            android:fontFamily="@font/lato"
+            android:text="HỌ VÀ TÊN"
+            android:textColor="#999999"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/reigsiter_name"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="259dp"
+            android:layout_marginEnd="32dp"
+            android:drawableRight="@drawable/ic_user_blue_icon"
+            android:fontFamily="@font/lato"
+            android:drawablePadding="10dp"
+            android:hint="Nguyễn Văn A"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:textColorHint="#676767"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="429dp"
+            android:fontFamily="@font/lato"
+            android:text="Mật KHẨU"
+            android:textColor="#999999"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/reigsiter_email"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="356dp"
+            android:layout_marginEnd="32dp"
+            android:drawableRight="@drawable/ic_user_blue_icon"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/lato"
+            android:hint="yourname@gmail.com"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:textColorHint="#676767"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="332dp"
+            android:fontFamily="@font/lato"
+            android:text="EMAIL"
+            android:textColor="#999999"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/register_pass"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="456dp"
+            android:layout_marginEnd="32dp"
+            android:drawableRight="@drawable/ic_password_key_blue_icon"
+            android:fontFamily="@font/lato"
+            android:hint="********"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#676767"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="360dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="544dp"
+            android:background="@drawable/backgroudlogin"
+            android:text="Đăng KÝ"
+            android:textColor="#FFFFFF"
+            android:id="@+id/reigster_btn"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/login_tk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="712dp"
+            android:fontFamily="@font/lato"
+            android:text="Chưa có tài khoản?"
+            android:textColor="#999999"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/login_dk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="712dp"
+            android:fontFamily="@font/lato"
+            android:text=" Đăng ký ngay"
+            android:textColor="#4356B4"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="508dp"
+            android:src="@drawable/ic_uncheck_gray_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/t_i_ng_v_i_"
+            android:layout_width="268dp"
+            android:layout_height="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="57dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="494dp"
+            android:text="êfdsfdsfdsffdsfs"
+            android:textSize="15dp"
+            android:textAppearance="@style/t_i_ng_v_i_"
+            android:gravity="top"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
