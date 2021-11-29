@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/message"
-        android:id="@+id/tv_message"
+        android:id="@+id/label_message"
         android:textSize="30sp"
         android:layout_marginTop="54dp"
         android:layout_marginLeft="12dp"
@@ -76,15 +76,17 @@
         android:id="@+id/guideline_h.23"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_message"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/rcv_message"
         android:background="@drawable/background_rcv_message"
-        app:layout_constraintTop_toTopOf="@id/guideline_h.23"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h.88"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/guideline_h.88"
-        android:padding="12dp"/>
+        app:layout_constraintTop_toTopOf="@id/guideline_h.23"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:layout_width="match_parent"
@@ -98,7 +100,7 @@
         android:layout_height="0dp"
         app:layout_constraintGuide_percent=".032"
         android:orientation="vertical"
-        android:id="@+id/guideline_v.32"/>
+        android:id="@+id/guideline_v.032"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:layout_width="match_parent"
@@ -120,15 +122,137 @@
         android:orientation="horizontal"
         android:id="@+id/guideline_h.9803"/>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bnv"
+    <View
+        android:id="@+id/view_bottom"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:elevation="10dp"
-        app:layout_constraintBottom_toTopOf="@id/guideline_h.9803"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h.9803"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="@id/guideline_v.32"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v.032"
         app:layout_constraintRight_toRightOf="@id/guideline_v.968"
-        app:layout_constraintTop_toTopOf="@id/guideline_h.8941" />
+        app:layout_constraintTop_toTopOf="@id/guideline_h.8941"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintGuide_percent=".5"
+        android:orientation="vertical"
+        android:id="@+id/guideline_v.5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintGuide_percent=".179"
+        android:orientation="vertical"
+        android:id="@+id/guideline_v.179"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintGuide_percent=".821"
+        android:orientation="vertical"
+        android:id="@+id/guideline_v.821"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintGuide_percent=".929"
+        android:orientation="horizontal"
+        android:id="@+id/guideline_h.929"/>
+
+
+    <ImageView
+        android:id="@+id/img_friend"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_friend_gray_icon"
+        app:layout_constraintTop_toTopOf="@id/guideline_h.929"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h.929"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v.5"
+        app:layout_constraintRight_toRightOf="@id/guideline_v.5"/>
+
+    <TextView
+        android:id="@+id/tv_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/friend"
+        app:layout_constraintBottom_toTopOf="@id/guideline_h.9803"
+        app:layout_constraintTop_toBottomOf="@id/img_friend"
+        app:layout_constraintRight_toRightOf="@id/guideline_v.5"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v.5"
+        android:textColor="@color/gray"/>
+
+<!--    <View-->
+<!--        android:id="@+id/view_friend"-->
+<!--        android:layout_width="6dp"-->
+<!--        android:layout_height="6dp"-->
+<!--        android:background="@drawable/background_view_item"-->
+<!--        app:layout_constraintTop_toTopOf="@id/guideline_h.8941"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/guideline_h.8941"-->
+<!--        app:layout_constraintRight_toRightOf="@id/guideline_v.5"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/guideline_v.5"/>-->
+
+    <ImageView
+        android:id="@+id/img_message"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        app:layout_constraintTop_toTopOf="@id/guideline_h.929"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h.929"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v.179"
+        app:layout_constraintRight_toRightOf="@id/guideline_v.179"
+        android:src="@drawable/ic_message_blue_icon"/>
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message"
+        app:layout_constraintBottom_toTopOf="@id/guideline_h.9803"
+        app:layout_constraintTop_toBottomOf="@id/img_message"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v.179"
+        app:layout_constraintRight_toRightOf="@id/guideline_v.179"
+        android:textColor="@color/gray"/>
+
+    <View
+        android:id="@+id/view_message"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:background="@drawable/background_view_item"
+        app:layout_constraintTop_toTopOf="@id/guideline_h.8941"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h.8941"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v.179"
+        app:layout_constraintRight_toRightOf="@id/guideline_v.179"/>
+
+    <ImageView
+        android:id="@+id/img_personal"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        app:layout_constraintTop_toTopOf="@id/guideline_h.929"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h.929"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v.821"
+        app:layout_constraintRight_toRightOf="@id/guideline_v.821"
+        android:src="@drawable/ic_personal_page_gray_icon"/>
+
+    <TextView
+        android:id="@+id/tv_personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/personal"
+        app:layout_constraintBottom_toTopOf="@id/guideline_h.9803"
+        app:layout_constraintTop_toBottomOf="@id/img_message"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v.821"
+        app:layout_constraintRight_toRightOf="@id/guideline_v.821"
+        android:textColor="@color/gray"/>
+
+<!--    <View-->
+<!--        android:id="@+id/view_personal"-->
+<!--        android:layout_width="6dp"-->
+<!--        android:layout_height="6dp"-->
+<!--        android:background="@drawable/background_view_item"-->
+<!--        app:layout_constraintTop_toTopOf="@id/guideline_h.8941"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/guideline_h.8941"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/guideline_v.821"-->
+<!--        app:layout_constraintRight_toRightOf="@id/guideline_v.821"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

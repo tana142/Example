@@ -6,10 +6,10 @@
         android:title="@string/message" />
     <item
         android:id="@+id/item_friends"
-        android:icon="@drawable/ic_message_gray_icon"
-        android:title="@string/message" />
+        android:icon="@drawable/ic_friend_gray_icon"
+        android:title="@string/friend" />
     <item
         android:id="@+id/item_personal"
-        android:icon="@drawable/ic_message_gray_icon"
-        android:title="@string/message" />
+        android:icon="@drawable/ic_personal_page_gray_icon"
+        android:title="@string/personal" />
 </menu>
