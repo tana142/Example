@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "951353886624",
+    "project_id": "appchat-2780a",
+    "storage_bucket": "appchat-2780a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951353886624:android:4ae17a1a7b3662abd846c5",
+        "android_client_info": {
+          "package_name": "com.example.tesschatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951353886624-bvu4fuu0e55v2gh239jk2b1j487d0fqs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tesschatapp",
+            "certificate_hash": "95cd082087894fec5dd9d320c643432d6c38dd98"
+          }
+        },
+        {
+          "client_id": "951353886624-fjmbte1lf2pai7t944m6aecsklg6mpeu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrtdIWA8gzKLhTf13R3pz0J2BEhZ8Vxio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951353886624-fjmbte1lf2pai7t944m6aecsklg6mpeu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
