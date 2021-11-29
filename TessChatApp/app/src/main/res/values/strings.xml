@@ -4,4 +4,6 @@
     <string name="app_name_sub2">chat</string>
     <string name="message">Tin nhắn</string>
     <string name="find_message">Tim kiem tin nhan</string>
+    <string name="friend">Ban be</string>
+    <string name="personal">Trang ca nhan</string>
 </resources>

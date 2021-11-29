@@ -190,18 +190,18 @@
             android:src="@drawable/ic_uncheck_gray_icon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-        <TextView
-            android:id="@+id/t_i_ng_v_i_"
-            android:layout_width="268dp"
-            android:layout_height="17dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="57dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="494dp"
-            android:text="êfdsfdsfdsffdsfs"
-            android:textSize="15dp"
-            android:textAppearance="@style/t_i_ng_v_i_"
-            android:gravity="top"
-            />
+<!--        <TextView-->
+<!--            android:id="@+id/t_i_ng_v_i_"-->
+<!--            android:layout_width="268dp"-->
+<!--            android:layout_height="17dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_marginLeft="57dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginTop="494dp"-->
+<!--            android:text="êfdsfdsfdsffdsfs"-->
+<!--            android:textSize="15dp"-->
+<!--            android:textAppearance="@style/t_i_ng_v_i_"-->
+<!--            android:gravity="top"-->
+<!--            />-->
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

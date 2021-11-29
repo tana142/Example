@@ -11,4 +11,6 @@
     <color name="transparent1">#F6F6F6F6</color>
     <color name="blue_start">#4356B4</color>
     <color name="blue_end">#3DCFCF</color>
+    <color name="gray">#D2D2D2</color>
+    <color name="gray_detail_message">#E5E5E5</color>
 </resources>
