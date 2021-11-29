@@ -55,6 +55,36 @@
         app:layout_constraintLeft_toRightOf="@id/image_user_message"
         app:layout_constraintTop_toBottomOf="@id/tv_name_user_message" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintGuide_percent=".1373"
+        android:id="@+id/guideline_v.1373"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintGuide_percent=".0424"
+        android:id="@+id/guideline_h.0425"
+        android:orientation="horizontal"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_count_number_notification_red_large_icon"
+        app:layout_constraintTop_toTopOf="@id/guideline_h.0425"
+        app:layout_constraintButtom_toBottomOf="@id/guideline_h.0425"
+        app:layout_constraintRight_toRightOf="@id/guideline_v.1373"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v.1373"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        app:layout_constraintTop_toTopOf="@id/guideline_h.0425"
+        app:layout_constraintButtom_toBottomOf="@id/guideline_h.0425"
+        app:layout_constraintRight_toRightOf="@id/guideline_v.1373"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v.1373"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
