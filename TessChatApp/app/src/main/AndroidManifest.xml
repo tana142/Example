@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TessChatApp">
         <activity
-            android:name=".RegisterActivity"
+            android:name=".View.view.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".View.view.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MessengerActivity"
+            android:name=".View.view.MessengerActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".View.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
