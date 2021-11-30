@@ -10,17 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TessChatApp">
         <activity
-            android:name=".CreateNewMessageActivity"
+            android:name=".View.view.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".View.view.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".View.view.MessengerActivity"
             android:exported="false" />
         <activity
-            android:name=".DetailMessageActivity"
-            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:name=".View.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,12 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MessengerActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
