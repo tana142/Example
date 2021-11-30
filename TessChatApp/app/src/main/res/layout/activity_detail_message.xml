@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray_detail_message"
-    tools:context=".DetailMessageActivity">
+    tools:context=".View.view.DetailMessageActivity">
     <androidx.constraintlayout.widget.Guideline
         android:layout_width="0dp"
         android:layout_height="0dp"
