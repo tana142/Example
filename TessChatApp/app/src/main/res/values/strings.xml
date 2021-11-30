@@ -6,4 +6,6 @@
     <string name="find_message">Tim kiem tin nhan</string>
     <string name="friend">Ban be</string>
     <string name="personal">Trang ca nhan</string>
+    <string name="create_message">Tao tin nhan</string>
+    <string name="cancel">Huy</string>
 </resources>
