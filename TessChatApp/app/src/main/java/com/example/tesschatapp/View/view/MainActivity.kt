@@ -9,13 +9,16 @@ import android.view.WindowManager
 
 import android.content.Intent
 import android.os.Looper
+import androidx.fragment.app.commit
 import com.example.tesschatapp.R
+import com.example.tesschatapp.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
+    private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
 
         //set transparent status bar
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -24,15 +27,11 @@ class MainActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
             )
         }
-     Welcome()
-    }
-    private fun Welcome() {
-        Handler(Looper.getMainLooper()).postDelayed({
-            /* Create an Intent that will start the Menu-Activity. */
-            val mainIntent = Intent(this, LoginActivity::class.java)
-            startActivity(mainIntent)
-            finish()
-        }, 3000)
+
+        supportFragmentManager.commit {
+            replace(R.id.nav_host_fragment, Login.Instance())
+        }
+
     }
 
 }

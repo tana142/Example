@@ -6,4 +6,6 @@
     <string name="find_message">Tim kiem tin nhan</string>
     <string name="friend">Ban be</string>
     <string name="personal">Trang ca nhan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
