@@ -1,0 +1,31 @@
+git checkout main
+git pull cap nhat lai code khi dang len
+git checkout tennhanh
+git merge main 
+// day code len git
+git add .
+git status
+git restore
+//
+mvvm
+viewmodel
+live data:
+-là một lớp người giữ dữ liệu có thể quan sát được
+-livedata nhận biết được vòng đời 
+-livedata chỉ cập nhật trình quan sát đang ở trang thái vong đời hoạt động
+-ưu điểm:
+  +đảm bảo giao diện người dùng khớp với trạng thái dữ liệu của bạn:
+  livedata tuân mô hình obsever pattern ,livedata thông báo cho obsever các đối tượng khi dữ liệu cở bản thay đổi.Bạn có thể hợp nhtaas mã 
+  để mình cập nhật giao diện của người dùng trong các obsever bằng cách đổ bạn không cần cập nhật giao diện của người dung mỗi khi dữ liệu ứng dụng
+đổi vì obsever sẽ thực hiện.
+  +không bị rò rỉ bộ nhớ:
+    obsever bị ràng buộc bởi các lifecycle các đối tượng và tự dọn dẹp khi vòng đời liên quan của chúng bị phá huỷ
+  +không có sự cố do các hoạt động đã dừng
+   +không có sự cố do các hoạt động đã dừng
+  +không còn xử lý vòng đời thủ công nữa
+  +luôn cập nhật dữ liều
+  +thay đổi cấu hình thích hợp
+  +chia sẻ tài nguyên
+
+
+databinding
